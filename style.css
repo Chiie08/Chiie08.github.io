@@ -1,77 +1,64 @@
-/* --------------------
-        全体
--------------------- */
+<style>
+  body {
+    background-color: #ffe8f3; 
+    color: #3c1f5b; 
+    font-family: Arial, "Hiragino Sans", Meiryo, sans-serif;
+    line-height: 1.8;
+    margin: 30px;
+  }
 
-:root {
-  --theme-color: #00a0a0;
-}
+  h1, h2, h3 {
+    color: #4a0e7a; 
+    border-left: 6px solid #ff7a00;
+    padding-left: 10px;
+  }
 
-* {
-  box-sizing: border-box;
-}
+  a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-html, body {
-  width: 100%;
-  height: 100%;
-}
+  a:hover {
+    color: #ff7a00;
+    text-decoration: underline;
+  }
 
-body {
-  margin: 0;
-  padding: 30px;
-  color: #333;
-}
+  ul {
+    margin-bottom: 20px;
+  }
 
-/* --------------------
-        見出し
--------------------- */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    background: #ffffff;
+    border: 2px solid #ffb4d9;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
 
-h1, h2, h3 {
-  color: var(--theme-color);
-  border-bottom: dashed 0.1em var(--theme-color);
-}
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #f5c4e0;
+  }
 
-/* --------------------
-        リンク
--------------------- */
+  th {
+    background-color: #f3d0ef;
+    color: #4a0e7a;
+    text-align: left;
+  }
 
-a {
-  color: var(--theme-color);
-  text-decoration: none;
-}
+  td {
+    background-color: #fff;
+    color: #3c1f5b;
+  }
 
-/* --------------------
-        リスト
--------------------- */
+  strong, .highlight {
+    color: #ff7a00;
+    font-weight: bold;
+  }
+</style>
 
-ul {
-  list-style: none;
-}
-li:before {
-  content: "★";
-  color: var(--theme-color);
-}
 
-/* --------------------
-          表
--------------------- */
-
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
-  border: solid 1px #f0f0f0;
-  min-width: 70%;
-}
-tr {
-  background-color: #fff;
-}
-tr:nth-child(2n) {
-  background-color: #f9f9f9;
-}
-th {
-  background: var(--theme-color);
-  color: #fff;
-}
-th, td {
-  border: solid 1px #f0f0f0;
-  padding: 0.5rem;
-}
